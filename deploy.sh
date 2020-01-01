@@ -3,5 +3,5 @@ cd docs/.vuepress/dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:Magic-Doufu.github.io.git master
+git push -f git@github.com:Magic-Doufu/Magic-Doufu.github.io.git master
 cd -

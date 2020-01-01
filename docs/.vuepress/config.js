@@ -12,29 +12,23 @@ module.exports = {
     },
     lineNumbers: false
   },
-  theme: 'thindark',
   themeConfig: {
     nav:[
-      {text: '傳產工業4.0協作企劃', link: 'https://magic-doufu.github.io/Industry-4.0-Web/' },
-      {text: '原文文檔', link: 'https://docs.thinger.io/' }
+      {
+        text: '參與專案',
+        items: [
+          {text: '傳產工業4.0協作企劃', link: 'https://magic-doufu.github.io/Industry-4.0-Web/' },
+          {text: 'Thinger.io中文文檔', link: 'https://magic-doufu.github.io/thinger.io-docs-zh-t' }
+        ]
+      }
     ],
-    sidebar:[
-
-    ],
+    sidebar: 'auto',
     sidebarDepth: 2,
   },
   configureWebpack: {
     resolve: {
       alias: {
-        '@assets': './assets/',
-        '@server': './assets/Server',
-        '@overview': './assets/Overview',
-        '@arduino': '../assets/Arduino',
-        '@sigfox': '../assets/Sigfox',
-        '@linux': '../assets/Linux',
-        '@coding': './assets/Coding',
-        '@cloud': '../assets/Cloud',
-        '@api': './assets/API'
+        //'@assets': './assets/',
       }
     }
   }
